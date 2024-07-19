@@ -1,0 +1,3442 @@
+@font-face {
+  font-family: Urbanist;
+  src: url("./Fonts/Urbanist/Urbanist-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Juana Alt";
+  src: url("./Fonts/Juana/JuanaAlt-Thin.otf");
+}
+@font-face {
+  font-family: "Juana Alt Reg";
+  src: url("./Fonts/Juana/JuanaAlt-Regular.otf");
+}
+
+@font-face {
+  font-family: "Juana";
+  src: url("./Fonts/Juana/Juana-RegularIt.otf");
+}
+
+@font-face {
+  font-family: "Juana Reg";
+  src: url("./Fonts/Juana/Juana-Regular.otf");
+}
+
+@font-face {
+  font-family: "Juana Light";
+  src: url("./Fonts/Juana/Juana-Thin.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  background-color: #ebebeb;
+  position: relative;
+}
+
+#main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  /* z-index: 1; */
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 999999999;
+  background: rgba(0, 0, 255, 0.07);
+  backdrop-filter: blur(150px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.logo-load {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: flex-end;
+}
+
+.logo-load .captial {
+  width: 5em;
+  height: 6em;
+  margin-left: -0.7em;
+}
+
+.logo-load .small {
+  width: 4em;
+  height: 4em;
+  margin-left: -0.7em;
+}
+
+.logo-load .small:nth-child(4) {
+  margin-left: -1.5em;
+}
+
+.loader-text {
+  color: #fff;
+  text-align: center;
+  font-family: "Juana Alt";
+  font-size: 1.4em;
+  font-weight: 400;
+}
+
+.loader-bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 2em 4em;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  position: fixed;
+  top: 2%;
+  left: 5%;
+  width: 90%;
+  height: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2vw;
+  z-index: 10000;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12.5px);
+}
+
+nav .nav-tittle {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  /* padding: 4em 0; */
+}
+
+nav .nav-tittle .logo {
+  width: 70%;
+  object-fit: cover;
+  object-position: center;
+}
+
+nav .nav-link {
+  display: flex;
+  gap: 1.3rem;
+}
+
+nav .nav-links {
+  color: #a7a7a7;
+  text-align: center;
+  font-family: Arial;
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.nav-link-active {
+  color: #000 !important;
+}
+
+nav .nav-icon a {
+  padding: 2vh 1.5vw;
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+  color: black;
+  font-family: Urbanist;
+  font-weight: 600;
+  font-size: 1em;
+  text-align: center;
+  line-height: 35px;
+}
+
+#menu-bar {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: -100%;
+  left: 0;
+  z-index: 999999;
+  background: rgba(161, 178, 190, 0.25);
+  backdrop-filter: blur(150px);
+}
+
+.menu-logo-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 5em;
+  padding-top: 2em;
+}
+
+#close {
+  cursor: pointer;
+}
+
+.menu-bar-link {
+  width: 100%;
+  height: fit-content;
+  padding: 0 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.menu-link {
+  width: 90%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Juana Alt";
+  font-size: 3em;
+  font-weight: 590;
+  padding: 0.3em 0;
+  border-top: 1px solid #fff;
+}
+
+.menu-link:nth-child(1) {
+  border: none;
+}
+
+.menu-link .menu-link-number {
+  font-family: Urbanist !important;
+  font-size: 0.5em !important;
+  font-weight: 400 !important;
+}
+
+.menu-social-connect {
+  width: 90%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2vh;
+  align-items: center;
+}
+
+.menu-social-media {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.social-media-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.linkdin {
+  color: #fff;
+  font-family: Urbanist;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 22px */
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.email {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.email .h5-heading,
+.menu-social-media .h5-heading {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1em;
+  width: fit-content;
+}
+
+.email-connect {
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 100px;
+  border: 1px solid #fff;
+  background: none;
+  outline: none;
+  padding: 0.5em 1em;
+  color: #fff;
+  font-family: Urbanist;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.email-connect::placeholder {
+  color: #fff;
+  font-family: Urbanist;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.house-page {
+  padding-top: 12vh;
+  width: 100%;
+  height: 100vh;
+  padding-bottom: 3vh;
+  background: #ebebeb;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  /* justify-content: space-around; */
+}
+
+.content img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  scale: 1.3;
+  object-fit: contain;
+  object-position: center;
+  z-index: 10;
+}
+
+.content .moto {
+  width: 100%;
+  position: relative;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  padding: 3.5vh 0;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 10vh;
+}
+
+.content .moto span {
+  color: black;
+  z-index: 99999;
+  font-family: Urbanist;
+  font-size: 1vw;
+  font-weight: 400;
+  color: #fff;
+}
+
+.content .moto h1 {
+  color: #fff;
+  text-align: center;
+  font-family: "Juana Alt";
+  font-weight: 200;
+  z-index: 999;
+  font-size: 4.5em;
+  line-height: 0.9em;
+}
+.content .moto h2 {
+  color: #fff;
+  text-align: center;
+  font-family: "Juana";
+  font-weight: 400;
+  z-index: 999;
+  font-size: 5em;
+  line-height: 0.8em;
+}
+
+.content .home-page-button {
+  width: 100%;
+  position: relative;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.content .home-page-button button {
+  z-index: 999;
+  width: 16em;
+  padding: 2.5vh 0;
+  border-radius: 10px;
+  border: 2.089px solid #00f;
+  background: rgba(0, 0, 185, 0.73);
+  font-family: Urbanist;
+  color: #fff;
+  font-size: 1.1vw;
+  font-weight: 300;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+#second-button {
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(15px);
+}
+
+.upper-slider {
+  width: 100%;
+  height: 55vh;
+  padding: 5vh 2em;
+  display: flex;
+  gap: 2rem;
+  background-color: #fff;
+}
+.upper-slider .slider {
+  width: 50%;
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 10vh 3vw;
+  gap: 0.5rem;
+  background-image: url("./Approval.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.upper-slider .slider h4 {
+  font-family: Urbanist;
+  font-size: 1.9em;
+  font-weight: 600;
+  font-style: italic;
+  color: #fff;
+}
+
+.upper-slider .slider h5 {
+  font-family: Urbanist;
+  font-size: 1.9em;
+  font-weight: 300;
+  color: #fff;
+}
+
+.invisible-button {
+  padding: 2vh 2vw;
+  width: fit-content;
+  margin-top: 3vh;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-family: Urbanist;
+  font-size: 1em;
+  font-weight: 300;
+  cursor: pointer;
+  border-radius: 100px;
+}
+
+.mobile-feautre {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6vw 3vw;
+  gap: 2rem;
+  position: relative;
+}
+.mobile-feautre .custom-background{
+  z-index: 0;
+}
+
+.movile-display {
+  background-image: url(./mobile-original.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  width: 30%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 1em;
+  z-index: 99;
+  overflow: hidden;
+}
+.movile-display .custom-background {
+  z-index: -1;
+  width: 90%;
+}
+
+/* .mobile-video {
+  width: 85%;
+  height: 100%;
+  background-color: red;
+} */
+
+.mobile-feautre .paragraph{
+  font-size: 1vw;
+  z-index: 99;
+}
+
+.mobile-feautre .h1-heading{
+  font-size: 3vw;
+}
+
+
+.review {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 4em 3em;
+  z-index: 1;
+}
+
+
+.review-tittle{
+  color: #000;
+  font-family: Urbanist;
+  font-size: 3.2vw;
+  font-style: normal;
+  font-weight: 500;
+  /* line-height: 86px; 134.375% */
+}
+
+.client-feedback {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.feedback-right,
+.feedback-left {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  gap: 1.5rem;
+  /* transform: rotate(-2.763deg); */
+}
+
+.feedback-right{
+  justify-content: end;
+}
+
+.feedback {
+  display: flex;
+  width: 35%;
+  height: fit-content;
+  gap: 2rem;
+  padding: 5vh 3vw;
+  background-color: #fff;
+  border-radius: 10px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.feedback:hover{
+  background-color: #00f;
+}
+
+.feedback:hover .user-write,
+.feedback:hover .user-name{
+  color: #fff;
+}
+
+.user-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.feedback .author-img{
+  width: 90px;
+  height: 90px;
+}
+
+.user-write,
+.user-name{
+  color: #000;
+  font-family: Urbanist;
+  font-size: 1vw;
+  font-weight: 500;
+  /* line-height: 110%; */
+}
+
+.leaders{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+  z-index: 1;
+  margin-top: 10vh;
+}
+
+.leaders .custom-background{
+  z-index: 1;
+}
+
+
+.leaders .h5-heading{
+  text-align: center;
+  font-size: 1.2vw;
+  z-index: 99;
+}
+
+.h1-heading{
+  color: #000;
+  text-align: center;
+  font-family: Urbanist;
+  font-size: 2.3vw;
+  font-weight: 400;
+  z-index: 99;
+}
+
+.leaders-left,
+.leaders-right{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  z-index: 999;
+}
+
+
+.leaders-img{
+  display: flex;
+  gap: 4rem;
+  z-index: 99;
+}
+
+.leaders-picture{
+  width: 1px;
+  /* background-color: #00f; */
+}
+
+
+.leader-name{
+  color: #000;
+  text-align: right;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Urbanist;
+  font-size: 2.5vw;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+/* Team Page Section CSS */
+
+.catergory {
+  width: 100%;
+  height: 22vh;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  box-shadow: 0px 2px 44.5px 0px rgba(0, 0, 0, 0.1);
+  padding: 1em 4em;
+}
+
+.people-catergory {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  display: flex;
+  gap: 2.2rem;
+}
+
+.people-button {
+  border: none;
+  background: none;
+  font-family: Urbanist;
+  font-size: 0.9vw;
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+  padding: 0.2rem 0;
+  color: #bcbcbc;
+}
+
+.active {
+  color: #000;
+  border-bottom: 2px solid #0000ff;
+}
+
+.people-button:hover {
+  color: #000;
+}
+
+.finder {
+  width: 100%;
+  height: fit-content;
+  padding: 6vh 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-finder {
+  width: 98%;
+  height: fit-content;
+  box-shadow: 0px 2px 44.5px 0px rgba(0, 0, 0, 0.1);
+  padding: 4vh 2em;
+  border-radius: 10px;
+  display: flex;
+  gap: 4rem;
+}
+
+.select-section {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.selection-text {
+  font-family: Urbanist;
+  font-size: 0.8vw;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.input-text {
+  width: 100%;
+  height: 5vh;
+  border-radius: 10px;
+  background: #f6f6f6;
+  border: none;
+  outline: none;
+  padding: 0 1em;
+  font-family: Urbanist;
+  font-size: 0.7vw;
+  font-weight: 400;
+}
+
+.people-search {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2em;
+  gap: 0.5rem;
+}
+
+.people-find {
+  color: #000;
+  font-family: Urbanist;
+  font-size: 2vw;
+  font-weight: 400;
+}
+
+.search-find {
+  color: #818181;
+  font-family: Urbanist;
+  font-size: 0.7vw;
+  font-weight: 400;
+}
+
+.search-result {
+  width: 100%;
+  height: fit-content;
+  padding: 2em 2em;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.people {
+  width: 19%;
+  height: fit-content;
+  padding: 1em 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  border-radius: 20px;
+  box-shadow: 0px 2px 44.5px 0px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+.people-img {
+  width: 100%;
+  height: 20%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.people-name {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.name {
+  font-family: Urbanist;
+  font-size: 0.9vw;
+  font-weight: 600;
+  line-height: 110%;
+  color: #000;
+}
+
+.contact {
+  display: flex;
+  gap: 1rem;
+}
+
+.contact i {
+  padding: 0.5em;
+  border-radius: 50%;
+  background-color: #f3f3f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0000ff;
+  font-size: 0.9vw;
+  cursor: pointer;
+}
+
+.people-profession {
+  font-family: Urbanist;
+  font-size: 0.8vw;
+  font-weight: 400;
+  color: #9f9f9f;
+}
+
+.rating {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.experites {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.people-experites {
+  padding: 1em 1em;
+  background-color: #f3f3f3;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 100px;
+  font-family: Urbanist;
+  font-size: 0.7vw;
+  font-weight: 400;
+  color: #767676;
+}
+
+.people-profile {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 0px 2px 44.5px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  padding-top: 10vh;
+  padding: 0 7vw;
+}
+
+.custom-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+}
+.people-details {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 6em 4em;
+  z-index: 99;
+}
+
+.intro {
+  width: fit-content;
+  color: #000;
+  font-family: Urbanist;
+  font-size: 1.5em;
+  font-weight: 400;
+  padding: 0.5em 0;
+  border-bottom: 2px solid #0000ff;
+}
+
+.mortgage-expert {
+  width: fit-content;
+  text-align: left;
+  font-family: "Juana Light";
+  font-style: italic;
+  font-size: 3.5vw;
+  font-weight: 100;
+  letter-spacing: -2.6px;
+}
+
+.expert-span {
+  font-family: "Juana Alt Reg";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.help {
+  width: fit-content;
+  color: #545353;
+  font-family: Urbanist;
+  font-size: 0.8vw;
+  font-weight: 200;
+}
+
+.meeting {
+  display: flex;
+  gap: 1rem;
+}
+
+.meeting-bottom {
+  padding: 1em 0;
+  width: 25%;
+  background: none;
+  border: 1px solid #000;
+  border-radius: 30px;
+  color: #000;
+  text-align: center;
+  font-family: Urbanist;
+  font-size: 0.8vw;
+  font-weight: 400;
+  outline: none;
+  cursor: pointer;
+}
+
+.apply {
+  background-color: #0000ff;
+  border: none;
+  color: #fff;
+}
+
+.person-img {
+  width: 35%;
+  height: 100%;
+  position: relative;
+  z-index: 99;
+}
+
+.person-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.info {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.card {
+  width: 350px;
+  height: fit-content;
+  padding: 2em 3em;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.31);
+  backdrop-filter: blur(50px);
+}
+.card h4,
+.card p {
+  color: #fff;
+}
+.founded-show {
+  width: 50px !important;
+  object-fit: cover;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.founded-show:nth-child(1) {
+  margin-right: -20px;
+  z-index: 110;
+  background-color: lightgray;
+}
+
+.founded-show:nth-child(2) {
+  margin-right: -20px;
+  z-index: 10;
+  background-color: blue;
+}
+.founded-show:nth-child(3) {
+  background-color: rgb(63, 58, 58);
+}
+
+/* Blog Section */
+
+.learning-center {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  padding: 2em 2em;
+  padding-top: 5em;
+}
+
+.content-center {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #00f;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.content-center .mortgage-expert {
+  font-size: 4vw;
+  line-height: 95%;
+  font-style: normal;
+  color: #fff;
+  text-align: center;
+  z-index: 999;
+}
+
+.content-center .custom-background {
+  mix-blend-mode: darken;
+}
+
+.search-article {
+  width: 45%;
+  height: 8vh;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  z-index: 90;
+  color: #dedede;
+  font-family: Urbanist;
+  font-size: 0.9vw;
+  font-weight: 400;
+  padding: 0 1em;
+  background: rgba(246, 246, 246, 0.3);
+  backdrop-filter: blur(25px);
+  display: flex;
+  align-items: center;
+}
+
+.search-article::placeholder {
+  color: #dedede;
+  font-family: Urbanist;
+  font-size: 0.9vw;
+  font-weight: 400;
+}
+
+.filter {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 3em 2em;
+  z-index: 99;
+}
+
+.filter .h5-heading {
+  color: #686868;
+  font-family: Urbanist;
+  font-size: 1vw;
+  font-weight: 600;
+}
+
+.filter-option {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  gap: 1rem;
+}
+
+.filter-button {
+  padding: 0.5em 0.8em;
+  background-color: #e1e1e1;
+  border-radius: 5px;
+  color: #000;
+  font-family: Urbanist;
+  font-size: 0.8vw;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.filter-active {
+  background-color: #00f !important;
+  color: #fff;
+}
+
+.blog-catergory {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 3em 2em;
+  flex-wrap: wrap;
+  z-index: 99;
+}
+
+.blog-link {
+  text-decoration: none;
+  width: 24%;
+  height: fit-content;
+}
+
+.blog {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 2vh 0;
+}
+
+.blog:hover {
+  box-shadow: 0px 2px 44.5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.blog:hover .blog-img img {
+  transform: scale(1.09);
+}
+
+.blog-img {
+  width: 100%;
+  height: 65%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.blog-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform ease 1s;
+}
+
+.blog-title,
+.blog-desc,
+.read-more {
+  width: 100%;
+  height: fit-content;
+  padding: 0 1em;
+}
+
+.h6-heading {
+  color: #404040;
+  font-family: Urbanist;
+  font-size: 0.8vw;
+  font-weight: 700;
+}
+
+.blog-desc .paragraph {
+  font-size: 0.6vw;
+}
+
+.read-more .paragraph {
+  font-size: 0.6vw;
+}
+
+/* Blog Post Section */
+
+.single-blog-post {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blog-post {
+  height: fit-content;
+  padding: 4em 2em;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 8em;
+  gap: 2rem;
+}
+
+.blog-post-title {
+  text-align: center;
+}
+
+.blog-post .paragraph {
+  width: 100%;
+  text-align: center;
+}
+
+.author {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.author-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.author-name {
+  color: #000;
+  font-family: Urbanist;
+  font-size: 1vw;
+  font-weight: 500;
+}
+
+.blog-post-img {
+  width: 100%;
+  height: 50%;
+  border-radius: 10px;
+}
+
+.blog-post .blog-post-mini-desc {
+  text-align: left;
+}
+
+.blog-post-content {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  text-align: left !important;
+}
+
+.blog-main-tittle {
+  color: #000;
+  font-family: Urbanist;
+  font-size: 1.5vw;
+  font-weight: 500;
+  text-align: left;
+}
+
+.blog-mini-tittle {
+  color: #000;
+  font-family: Urbanist;
+  font-size: 1.2vw;
+  font-weight: 500;
+}
+
+.more-blog {
+  padding: 2em 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.more-blog .h4-text {
+  font-size: 1.3vw;
+}
+
+.more-blog .blog-catergory {
+  padding: 2em 0;
+}
+
+/* Licensing Section */
+
+.earth-rotation {
+  width: 100%;
+  height: 100vh;
+  padding: 5vh 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.earth-rotation h3 {
+  color: #fff;
+  z-index: 2;
+}
+
+.earth-rotation video {
+  position: absolute;
+  left: 2%;
+  bottom: 5%;
+  width: 96%;
+  height: 85%;
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+}
+
+.licence-text {
+  width: 100%;
+  height: fit-content;
+  padding: 4em 3em;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #858585;
+}
+
+.h5-heading {
+  color: #787878;
+  font-family: Urbanist;
+  font-size: 0.7vw;
+  font-weight: 500;
+  width: 60%;
+}
+
+.company-licence {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.company-name {
+  color: #000;
+  font-family: Urbanist;
+  font-size: 1.1vw;
+  font-weight: 600;
+}
+
+.address,
+.company-link {
+  display: flex;
+  justify-content: space-between;
+}
+
+.address .location-text,
+.company-link .location-text {
+  color: #787878;
+  font-size: 0.8vw;
+}
+
+.country-list {
+  width: 100%;
+  height: fit-content;
+  padding: 8em 4em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.country {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  gap: 0.7rem;
+}
+.country svg {
+  margin-top: 0.6em;
+}
+
+.contry-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.country-name {
+  color: #000;
+  font-family: Urbanist;
+  font-size: 1.1vw;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.contry-active {
+  color: #787878;
+  font-family: Urbanist;
+  font-size: 0.7vw;
+  font-weight: 500;
+}
+
+/* ALL Access Section */
+
+.one-card {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  /* z-index: 2; */
+}
+.card-text {
+  position: relative;
+  z-index: 2;
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  padding: 0 8em;
+  gap: 1rem;
+}
+
+.card-images {
+  width: 40%;
+  z-index: 2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.card-file {
+  position: absolute;
+  left: 0;
+  top: 20%;
+  width: 45%;
+  object-fit: cover;
+  z-index: 10;
+  border: none;
+}
+
+.card-file:nth-child(2) {
+  top: 22%;
+  left: 10%;
+  transform: rotate(7.403deg);
+  z-index: 8;
+}
+
+.card-file:nth-child(3) {
+  top: 25%;
+  left: 16%;
+  transform: rotate(11.718deg);
+  z-index: 7;
+}
+
+/* OTC Section */
+
+.otc {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.otc-text {
+  font-size: 3.5vw;
+  font-style: normal;
+}
+
+.otc-img {
+  left: -10%;
+  width: 70%;
+  height: 60%;
+  border-radius: 20px;
+}
+
+.rectangle {
+  position: absolute;
+  left: 0%;
+  top: 25%;
+  width: 70%;
+  height: 60%;
+  background-color: blue;
+  border-radius: 30px;
+}
+
+.rectangle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  mix-blend-mode: exclusion;
+}
+
+.paragraph {
+  color: #545353;
+  font-family: Urbanist;
+  font-size: 0.9vw;
+  font-weight: 400;
+}
+
+/* Menfesto Section */
+
+.manfesto {
+  width: 100%;
+  height: 100vh;
+  padding: 1em 2em;
+  padding-top: 10vh;
+}
+
+.menfesto-rect {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.gradinat {
+  position: absolute;
+  left: 0;
+  bottom: -25%;
+  width: 25%;
+  height: 60%;
+  border-radius: 50%;
+  background: linear-gradient(214deg, #009 4.21%, #5e5e9e 63.14%);
+  filter: blur(150px);
+}
+
+.gradinat2 {
+  left: 80%;
+  top: -20%;
+}
+
+.manfesto-text {
+  color: #fff;
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+.menfesto-paragarph {
+  width: 20%;
+  text-align: center;
+  font-size: 0.9vw;
+}
+
+.menfesto-circle {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.circle-rect {
+  width: 15%;
+  height: 80%;
+  background-color: #000;
+  position: absolute;
+  left: 0;
+  top: 10%;
+}
+.circle {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  border-radius: 330.978px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(0, 0, 255, 0) 0%,
+    #000 7%,
+    #00f 100%
+  );
+}
+
+.circle-rect:nth-child(1) {
+  left: 28%;
+}
+.circle-rect:nth-child(2) {
+  left: 35%;
+  z-index: 9;
+}
+.circle-rect:nth-child(3) {
+  left: 42%;
+  z-index: 10;
+}
+.circle-rect:nth-child(4) {
+  left: 49%;
+  z-index: 9;
+}
+.circle-rect:nth-child(5) {
+  left: 56%;
+}
+
+.cosumers {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.h4-text {
+  color: #000;
+  font-family: Urbanist;
+  font-size: 2.2vw;
+  font-weight: 500;
+  width: 40%;
+  text-align: center;
+}
+
+.cosumers-paragraph {
+  width: 50%;
+  text-align: center;
+  font-size: 0.7vw;
+}
+
+.option {
+  width: 100%;
+  height: fit-content;
+  padding: 7em 4em;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.option-text {
+  color: #fff;
+  font-weight: 400;
+}
+
+.options-section {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.options-box {
+  width: 25%;
+  height: fit-content;
+  display: flex;
+  gap: 1rem;
+  background-color: #fff;
+  padding: 3em 3em;
+  border-radius: 20px;
+  z-index: 90;
+}
+
+.options-box .paragraph {
+  font-size: 0.7vw;
+  line-height: 100%;
+}
+
+.svg-box {
+  width: fit-content;
+  height: fit-content;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #000 62.17%, #1616db 108.05%);
+  padding: 0.7em 0.74em;
+}
+.svg-box img {
+  width: 2em;
+  height: 2em;
+  object-fit: cover;
+  object-position: center;
+}
+
+.homeower {
+  width: 100%;
+  height: fit-content;
+  padding: 4em 2em;
+  display: flex;
+}
+
+.video-section {
+  width: 100%;
+  height: 50vh;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 10em;
+}
+.homeower-text {
+  position: relative;
+  z-index: 10;
+  width: 70%;
+  padding: 0 5em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.homeower-h4 {
+  color: #fff;
+  z-index: 10;
+  width: 50%;
+  font-weight: 400;
+  text-align: left;
+}
+
+.homeowner-img {
+  position: relative;
+  width: 30%;
+  height: 100%;
+  z-index: 10;
+}
+
+.homeowner-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Carrier Section */
+
+.carrier-join {
+  background: url("./annie.png");
+  background-size: cover;
+  background-position: center;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.carrier-join .mortgage-expert {
+  color: #fff;
+  font-style: normal;
+}
+
+.carrier-join .paragraph {
+  width: 100%;
+  color: #dadada;
+}
+
+.specifiy-background {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+}
+.job-section {
+  padding: 3em 10em;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+}
+
+.job-filter {
+  position: relative;
+  z-index: 99;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 2em 0;
+}
+
+.job-filter .filter-button {
+  padding: 0.7em 2.2em;
+  background-color: #fff;
+  border-radius: 100px;
+  font-size: 0.8vw;
+  font-weight: 600;
+}
+
+.job-post {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  z-index: 99;
+  align-items: center;
+  justify-content: center;
+}
+
+.job-role {
+  width: 90%;
+  height: fit-content;
+  display: flex;
+  padding: 2em 0;
+  border-bottom: 1px solid #808080;
+  cursor: pointer;
+}
+
+.job-role:hover .job-title {
+  color: #0000ff;
+}
+
+.job-role:hover .arrow-img {
+  transform: rotate(45deg);
+}
+
+.job-desc {
+  width: 90%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.job-title {
+  font-family: "Juana Reg";
+  font-size: 2vw;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.job-details {
+  color: #666;
+  font-family: Urbanist;
+  font-size: 0.9vw;
+  font-weight: 400;
+}
+
+.job-filter-role {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.job-filter-role-button {
+  width: fit-content;
+  padding: 0.5em 1.2em;
+  border: 1px solid #00f;
+  background-color: none;
+  border-radius: 100px;
+  color: #000;
+  font-family: Urbanist;
+  font-size: 0.9vw;
+  font-weight: 600;
+}
+
+.job-apply {
+  display: flex;
+  gap: 1rem;
+}
+
+.arrow-img {
+  width: 3em;
+  height: 3em;
+  object-fit: cover;
+  object-position: center;
+  transition: transform ease 0.5s;
+}
+
+.job-button-apply {
+  color: #000;
+  font-family: Urbanist;
+  font-size: 2.4em;
+  font-weight: 500;
+}
+
+.ism {
+  width: 100%;
+  height: fit-content;
+  padding: 6em 10em;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 99;
+}
+
+.h3-heading {
+  color: #000;
+  font-family: Urbanist;
+  font-size: 2vw;
+  font-weight: 500;
+  position: relative;
+  z-index: 99;
+}
+
+.question-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  z-index: 99;
+}
+
+.question {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+  border-radius: 10px;
+  background-color: #fff;
+  cursor: pointer;
+  position: relative;
+  z-index: 100;
+}
+
+.question .h5-heading {
+  color: #000;
+  font-size: 1vw;
+  font-weight: 500;
+}
+
+/* Job Page */
+
+.job-profile {
+  width: 100%;
+  height: fit-content;
+  padding: 6em 3em;
+  display: flex;
+  margin-top: 6vh;
+}
+
+.job-profile-details {
+  width: 50%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.job-profile-details .job-title {
+  font-size: 3vw;
+}
+
+.job-profile-details .blog-main-tittle {
+  font-size: 1vw;
+}
+
+.job-profile-more-jobs .job-filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.profile-apply{
+  display: flex;
+  justify-content:center ;
+  gap: 1vw;
+  align-items:end;
+  flex-direction: column;
+  width: 50%;
+  height: fit-content;
+}
+.profile-apply #cv{
+  height: 10vw;
+  width: 100%;
+  background-color: transparent;
+  
+}
+
+#profile-apply-top{
+  width: 60%;
+  height: fit-content;
+  background-color:white;
+  border-radius: 8px;
+  padding: 3vw 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2em;
+}
+
+#profile-apply-input{
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  display: flex;
+  gap: 0.5em;
+  color: #888;
+}
+
+.job-apply-input{
+  height: 7vh;
+  width: 100%;
+  padding: 1vw 0;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: #F8F8F8;
+  font-family: Urbanist;
+  font-size: 1.1vw;
+  font-weight: 300;
+  padding: 0 1em;
+}
+
+.profile-apply .job-apply-button{
+  padding: 1vw 2vw;
+  color: white;
+  width: 100%;
+  border-radius: 12em;
+  background-color: #1616DB;
+  font-size: 1vw;
+  border: none;
+  cursor: pointer;
+  font-family: Urbanist;
+  font-size: 1.1vw;
+  font-weight: 300;
+}
+
+#profile-apply-bottom{
+  width: 60%;
+  height: 20%;
+  background-color: cadetblue;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+padding: 1.5vw 0;
+}
+
+.upload-cv{
+  width: 100%;
+  height: 6.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Urbanist;
+  font-size: 1vw;
+  font-weight: 500;
+  gap: 0.3em;
+  background-color: #fff;
+  border: 1px solid #000;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  /* background-color: red; */
+}
+
+
+.job-apply-text{
+  color: #000;
+  font-family: Urbanist;
+  font-size: 2.2vw;
+  font-weight: 500;
+}
+
+#profile-apply-input .h3-heading{
+  font-size: 1.3vw;
+}
+
+.carrier-button{
+  width: 60%;
+  padding: 1em 0;
+  background-color: #fff;
+  color: #9A9A9A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Urbanist;
+  font-size: 1.3vw;
+  font-weight: 500;
+  gap: 0.4em;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+/* Footer Section */
+
+footer {
+  width: 100%;
+  height: fit-content;
+  padding: 0 2em;
+  padding-top: 10em;
+}
+
+.footer-logo {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+.footer-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 0;
+  width: 100%;
+  padding-right: 1em;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.location-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.location-img {
+  width: 100px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.location-text {
+  font-family: Urbanist;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.footer-links {
+  display: flex;
+  gap: 3rem;
+}
+.footer-link-half {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.link {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.link-tag {
+  color: #000;
+  font-family: Urbanist;
+  font-size: 1.1em;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.footer-quote {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quote {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.rights {
+  font-family: Urbanist;
+  color: #000;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.social-media {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1919px) {
+  #main {
+    /* background-color: red; */
+  }
+
+  /* Job Section */
+
+  
+.job-profile-details .job-title {
+  font-size: 3.7vw;
+}
+
+.job-profile-details .blog-main-tittle {
+  font-size: 1.4vw;
+}
+
+  /* Carrier Section */
+
+  .job-role {
+    width: 100%;
+  }
+  .job-title {
+    font-size: 2.3vw;
+  }
+
+  .job-details {
+    font-size: 1vw;
+  }
+
+  .job-filter-role-button {
+    font-size: 1.1vw;
+  }
+
+  .h3-heading {
+    font-size: 2.2vw;
+  }
+
+  .job-filter .filter-button {
+    font-size: 0.9vw;
+  }
+
+  .question .h5-heading {
+    font-size: 1.1vw;
+  }
+
+  /* ALl Access Section */
+
+  .card-images {
+    width: 48%;
+  }
+
+  /* OTC Section */
+
+  .otc-text {
+    font-size: 3.5vw;
+  }
+
+  .otc-img {
+    height: 55%;
+  }
+
+  .rectangle {
+    top: 28%;
+    height: 55%;
+  }
+
+  .paragraph {
+    font-size: 1vw;
+  }
+  /* Manfesto Section */
+
+  .manfesto {
+    padding-top: 15vh;
+  }
+
+  .manfesto-text {
+    margin-top: 1em;
+  }
+
+  .menfesto-paragarph {
+    font-size: 1.1vw;
+  }
+
+  .circle-rect {
+    height: 66%;
+    min-height: 250px;
+  }
+
+  .cosumers-paragraph {
+    font-size: 1vw;
+  }
+
+  .option {
+    padding: 7em 2em;
+  }
+
+  .options-box .paragraph {
+    font-size: 0.9vw;
+  }
+
+  .homeower-text {
+    padding: 0 0;
+  }
+
+  .homeower-text .homeower-h4 {
+    width: 60%;
+  }
+
+  /* Team Section */
+
+  .people-button {
+    font-size: 1.1vw;
+  }
+  .finder {
+    padding: 2vh 2vh;
+  }
+
+  .inner-finder {
+    padding: 2vh 2em;
+    gap: 2rem;
+  }
+
+  .select-section {
+    width: 25%;
+    gap: 0.8rem;
+  }
+
+  .selection-text {
+    font-size: 1vw;
+  }
+
+  .input-text {
+    font-size: 0.9vw;
+  }
+
+  .people-find {
+    font-size: 2.3vw;
+  }
+
+  .search-find {
+    font-size: 0.9vw;
+  }
+
+  .search-result {
+    gap: 1rem;
+  }
+
+  .people {
+    gap: 0.8rem;
+  }
+
+  .name {
+    font-size: 1vw;
+  }
+
+  .contact i {
+    font-size: 1vw;
+  }
+
+  .people-profession {
+    font-size: 0.9vw;
+  }
+
+  .people-experites {
+    font-size: 0.8vw;
+  }
+
+  .people-profile {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0px 2px 44.5px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    padding-top: 10vh;
+    padding: 0 4vw;
+  }
+
+  .help {
+    font-size: 1vw;
+  }
+
+  .meeting-bottom {
+    font-size: 1vw;
+  }
+
+  .person-img {
+    width: 45%;
+  }
+
+  /* Licencing Section */
+
+  .h5-heading {
+    font-size: 0.9vw;
+  }
+
+  .company-name {
+    font-size: 1.4vw;
+  }
+
+  .address .location-text,
+  .company-link .location-text {
+    font-size: 1vw;
+  }
+
+  .country-name {
+    font-size: 1.3vw;
+  }
+
+  .contry-active {
+    font-size: 0.9vw;
+  }
+
+  /* Blog Section */
+
+  .content-center .mortgage-expert {
+    font-size: 4.5vw;
+  }
+
+  .search-article {
+    font-size: 0.9vw;
+  }
+
+  .search-article::placeholder {
+    font-size: 1vw;
+  }
+
+  .filter .h5-heading {
+    font-size: 1.3vw;
+  }
+
+  .filter-button {
+    font-size: 1vw;
+  }
+
+  .h6-heading {
+    font-size: 1vw;
+  }
+
+  .blog-desc .paragraph {
+    font-size: 0.7vw;
+  }
+
+  .read-more .paragraph {
+    font-size: 0.7vw;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1599px) {
+  #main {
+    /* background-color: red; */
+  }
+
+  /* Job Section */
+  .job-profile-details .job-title {
+    font-size: 4vw;
+  }
+  
+  .job-profile-details .blog-main-tittle {
+    font-size: 1.7vw;
+  }
+
+  /* Carrier Section */
+  .job-role{
+    width: 100%;
+  }
+
+  .job-title {
+    font-size: 2.8vw;
+  }
+
+  .job-details {
+    font-size: 1.2vw;
+  }
+
+  .job-filter-role-button {
+    font-size: 1.4vw;
+  }
+
+  .h3-heading {
+    font-size: 2.6vw;
+  }
+
+  .job-filter .filter-button {
+    font-size: 1.1vw;
+  }
+
+  .question .h5-heading {
+    font-size: 1.3vw;
+  }
+
+  /* All Access Section */
+
+  .card-images {
+    width: 50%;
+  }
+
+  /* OTC Section */
+
+  .otc-text {
+    font-size: 4vw;
+  }
+
+  .otc-img {
+    height: 50%;
+  }
+
+  .rectangle {
+    top: 28%;
+    height: 50%;
+  }
+
+  .paragraph {
+    font-size: 1.2vw;
+  }
+
+  /* Manfesto */
+
+  .manfesto {
+    padding-top: 15vh;
+  }
+
+  .manfesto-text {
+    margin-top: 1em;
+  }
+
+  .menfesto-paragarph {
+    font-size: 1.3vw;
+  }
+
+  .circle-rect {
+    height: 55%;
+    top: 15%;
+  }
+
+  .cosumers-paragraph {
+    font-size: 1.2vw;
+  }
+
+  .option {
+    padding: 7em 2em;
+    gap: 2rem;
+  }
+
+  .options-box .paragraph {
+    font-size: 1vw;
+  }
+
+  .options-box {
+    width: 30%;
+  }
+
+  .options-section {
+    gap: 3rem;
+  }
+
+  .homeower-text {
+    padding: 0 0;
+  }
+
+  .homeower-text .homeower-h4 {
+    width: 60%;
+  }
+
+  /* Team Section */
+
+  .people-button {
+    font-size: 1.3vw;
+  }
+  .finder {
+    padding: 2vh 2vh;
+  }
+
+  .inner-finder {
+    padding: 2vh 2em;
+    gap: 1rem;
+  }
+
+  .select-section {
+    width: 25%;
+    gap: 0.8rem;
+  }
+
+  .selection-text {
+    font-size: 1.3vw;
+  }
+
+  .input-text {
+    font-size: 1vw;
+  }
+
+  .people-find {
+    font-size: 2.3vw;
+  }
+
+  .search-find {
+    font-size: 1vw;
+  }
+
+  .search-result {
+    gap: 1rem;
+  }
+
+  .people {
+    width: 23%;
+    gap: 0.8rem;
+  }
+
+  .name {
+    font-size: 1.3vw;
+  }
+
+  .contact i {
+    font-size: 1.3vw;
+  }
+
+  .people-profession {
+    font-size: 1.2vw;
+  }
+
+  .people-experites {
+    font-size: 1.1vw;
+  }
+
+  .people-profile {
+    padding: 0 2vw;
+    padding-top: 15vh;
+  }
+
+  .help {
+    font-size: 1.2vw;
+  }
+
+  .meeting-bottom {
+    font-size: 1.2vw;
+  }
+
+  .person-img {
+    width: 50%;
+  }
+
+  /* Licencing Page */
+
+  .h5-heading {
+    font-size: 1vw;
+  }
+
+  .company-name {
+    font-size: 1.5vw;
+  }
+
+  .address .location-text,
+  .company-link .location-text {
+    font-size: 1.2vw;
+  }
+
+  .country-name {
+    font-size: 1.5vw;
+  }
+
+  .contry-active {
+    font-size: 1vw;
+  }
+
+  /* Blog Single Page */
+  .blog-post {
+    height: fit-content;
+    padding: 4em 2em;
+    width: 60%;
+    padding-top: 20vh;
+  }
+
+  .blog-post-title {
+    text-align: center;
+  }
+
+  .blog-post .paragraph {
+    width: 100%;
+  }
+
+  .author {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .author-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .author-name {
+    font-size: 1.2vw;
+  }
+
+  .blog-main-tittle {
+    font-size: 1.8vw;
+  }
+
+  .blog-mini-tittle {
+    font-size: 1.4vw;
+  }
+
+  .more-blog .h4-text {
+    font-size: 1.5vw;
+    text-align: center;
+  }
+
+  .blog-img {
+    width: 100%;
+    height: 60%;
+  }
+  /* Blog Section */
+
+  .content-center .mortgage-expert {
+    font-size: 5.2vw;
+  }
+
+  .search-article {
+    font-size: 1.3vw;
+  }
+
+  .search-article::placeholder {
+    font-size: 1.3vw;
+  }
+
+  .filter .h5-heading {
+    font-size: 1.5vw;
+  }
+
+  .filter-button {
+    font-size: 1.2vw;
+  }
+
+  .h6-heading {
+    font-size: 1.2vw;
+  }
+
+  .blog-desc .paragraph {
+    font-size: 0.9vw;
+  }
+
+  .read-more .paragraph {
+    font-size: 0.9vw;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+  #main {
+    /* background-color: red; */
+  }
+
+  /* Job Section */
+  .job-profile-details .job-title {
+    font-size: 5vw;
+  }
+  
+  .job-profile-details .blog-main-tittle {
+    font-size: 2vw;
+  }
+
+  /* Carrier Section */
+  .job-role{
+    width: 100%;
+  }
+
+  .job-title {
+    font-size: 2.8vw;
+  }
+
+  .job-details {
+    font-size: 1.2vw;
+  }
+
+  .job-filter-role-button {
+    font-size: 1.4vw;
+  }
+
+  .h3-heading {
+    font-size: 2.8vw;
+  }
+
+  .job-filter .filter-button {
+    font-size: 1.2vw;
+  }
+
+  .question .h5-heading {
+    font-size: 1.4vw;
+  }
+
+  /* All Access Section */
+
+  .card-images {
+    width: 60%;
+  }
+
+  /* OTC Section */
+
+  .otc-text {
+    font-size: 4vw;
+  }
+
+  .otc-img {
+    height: 60%;
+  }
+
+  .rectangle {
+    top: 28%;
+    height: 60%;
+  }
+
+  .paragraph {
+    font-size: 1.3vw;
+  }
+
+  /* Manfesto */
+
+  .manfesto {
+    padding-top: 15vh;
+  }
+
+  .manfesto-text {
+    margin-top: 1em;
+  }
+
+  .menfesto-paragarph {
+    font-size: 1.3vw;
+  }
+
+  .circle-rect {
+    /* width: 12%; */
+    height: 45%;
+    top: 15%;
+  }
+
+  .cosumers-paragraph {
+    font-size: 1.3vw;
+  }
+
+  .option {
+    padding: 7em 2em;
+    gap: 2rem;
+  }
+
+  .options-box .paragraph {
+    font-size: 1.3vw;
+  }
+
+  .options-box {
+    width: 33%;
+  }
+
+  .options-section {
+    gap: 2rem;
+  }
+
+  .homeower-text {
+    padding: 0 0;
+  }
+
+  .homeower-text .homeower-h4 {
+    width: 60%;
+  }
+
+  /* Team Section */
+
+  .people-button {
+    font-size: 1.5vw;
+  }
+  .finder {
+    padding: 2vh 2vh;
+  }
+
+  .inner-finder {
+    padding: 2vh 2em;
+    gap: 1rem;
+  }
+
+  .select-section {
+    width: 25%;
+    gap: 0.8rem;
+  }
+
+  .selection-text {
+    font-size: 1.5vw;
+  }
+
+  .input-text {
+    font-size: 1.1vw;
+  }
+
+  .people-find {
+    font-size: 2.6vw;
+  }
+
+  .search-find {
+    font-size: 1.1vw;
+  }
+
+  .search-result {
+    gap: 1rem;
+  }
+
+  .people {
+    width: 23%;
+    gap: 0.8rem;
+  }
+
+  .name {
+    font-size: 1.5vw;
+  }
+
+  .contact i {
+    font-size: 1.5vw;
+  }
+
+  .people-profession {
+    font-size: 1.4vw;
+  }
+
+  .people-experites {
+    font-size: 1.3vw;
+  }
+
+  .people-profile {
+    padding: 0 2vw;
+    padding-top: 15vh;
+  }
+
+  .help {
+    font-size: 1.4vw;
+  }
+
+  .meeting-bottom {
+    width: 50%;
+    font-size: 1.5vw;
+  }
+
+  .person-img {
+    width: 60%;
+  }
+
+  /* Licencing Page */
+
+  .h5-heading {
+    font-size: 1.2vw;
+  }
+
+  .company-name {
+    font-size: 1.7vw;
+  }
+
+  .address .location-text,
+  .company-link .location-text {
+    font-size: 1.4vw;
+  }
+
+  .country-name {
+    font-size: 1.8vw;
+  }
+
+  .contry-active {
+    font-size: 1.1vw;
+  }
+
+  /* Blog Single Page */
+  .blog-post {
+    height: fit-content;
+    padding: 4em 2em;
+    width: 70%;
+    padding-top: 20vh;
+  }
+
+  .blog-post-title {
+    text-align: center;
+  }
+
+  .blog-post .paragraph {
+    width: 100%;
+  }
+
+  .author {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .author-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .author-name {
+    font-size: 1.4vw;
+  }
+
+  .blog-main-tittle {
+    font-size: 2vw;
+  }
+
+  .blog-mini-tittle {
+    font-size: 1.6vw;
+  }
+
+  .more-blog .h4-text {
+    font-size: 1.7vw;
+    text-align: center;
+  }
+
+  .blog-img {
+    width: 100%;
+    height: 60%;
+  }
+  /* Blog Section */
+
+  .content-center .mortgage-expert {
+    font-size: 5.7vw;
+  }
+
+  .search-article {
+    font-size: 1.5vw;
+  }
+
+  .search-article::placeholder {
+    font-size: 1.5vw;
+  }
+
+  .filter .h5-heading {
+    font-size: 1.7vw;
+  }
+
+  .filter-button {
+    font-size: 1.4vw;
+  }
+
+  .h6-heading {
+    font-size: 1.4vw;
+  }
+
+  .blog-desc .paragraph {
+    font-size: 1vw;
+  }
+
+  .read-more .paragraph {
+    font-size: 1vw;
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1100px) {
+  #main {
+    /* background-color: red; */
+  }
+
+  /* Job Section */
+
+  .job-profile{
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .job-profile-details{
+    width: 90%;
+  }
+
+  .profile-apply{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .job-profile-details .job-title {
+    font-size: 5vw;
+  }
+  
+  .job-profile-details .blog-main-tittle {
+    font-size: 2.3vw;
+  }
+
+  /* Carrier Section */
+
+  .card-text{
+    width: 80%;
+  }
+
+  .job-section{
+    padding: 3em 4em;
+  }
+
+  .job-role{
+    width: 100%;
+  }
+
+  .job-title {
+    font-size: 3vw;
+  }
+
+  .job-details {
+    font-size: 1.6vw;
+  }
+
+  .job-filter-role-button {
+    font-size: 1.8vw;
+  }
+
+  .h3-heading {
+    font-size: 3vw;
+  }
+
+  .ism{
+    padding: 3em 4em;
+  }
+
+  .job-filter .filter-button {
+    font-size: 1.6vw;
+  }
+
+  .question .h5-heading {
+    font-size: 1.7vw;
+  }
+
+  /* All Access Section */
+
+  .one-card{
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+  }
+  .card-text{
+    height: 50%;
+  }
+  .card-images {
+    width: 80%;
+  }
+  .card-file{
+    top: 2%;
+    /* left: 20%; */
+  }
+  .card-file:nth-child(2){
+    top: 2%;
+  }
+
+  .card-file:nth-child(3){
+    top: 44%;
+  }
+
+  /* OTC Section */
+
+  .one-card{
+    height: 70vh;
+  }
+
+  .otc-text {
+    font-size: 4vw;
+    padding-top: 15vh;
+  }
+
+  .card-images{
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .otc-img {
+    left: 15%;
+    height: 50%;
+    top: 30%;
+  }
+
+  .rectangle {
+    left: 30%;
+    top: 40%;
+    height: 50%;
+  }
+
+  .paragraph {
+    font-size: 2vw;
+  }
+
+  /* Manfesto */
+
+  .manfesto {
+    padding-top: 10vh;
+    height: 50vh;
+  }
+
+  .manfesto-text {
+    margin-top: 1em;
+  }
+
+  .menfesto-paragarph {
+    font-size: 1.3vw;
+  }
+  .mortgage-expert{
+    font-size: 5.5vw;
+  }
+
+
+  .circle-rect {
+    /* width: 12%; */
+    height: 45%;
+    top: 20%;
+  }
+
+  .cosumers{
+    height: 40vh;
+  }
+
+  .cosumers-paragraph {
+    font-size: 1.3vw;
+  }
+
+  .option {
+    padding: 4em 1em;
+    gap: 2rem;
+  }
+  .options-box .paragraph {
+    font-size: 1.1vw;
+  }
+
+  .options-box {
+    width: 40%;
+    padding: 2em 1em;
+  }
+
+  .options-section {
+    gap: 1rem;
+  }
+
+  .homeower-text {
+    padding: 0 0;
+  }
+  .homeower{
+    height: 35vh;
+  }
+  .video-section{
+    height: 30vh;
+    padding: 0 4em;
+  }
+
+  .homeowner-img{
+    width: 50%;
+  }
+
+  .homeower-text .homeower-h4 {
+    width: 60%;
+  }
+
+  /* Team Section */
+
+  .people-button {
+    font-size: 1.5vw;
+  }
+  .finder {
+    padding: 2vh 2vh;
+  }
+
+  .inner-finder {
+    padding: 2vh 2em;
+    gap: 1rem;
+  }
+
+  .select-section {
+    width: 25%;
+    gap: 0.8rem;
+  }
+
+  .selection-text {
+    font-size: 1.5vw;
+  }
+
+  .input-text {
+    font-size: 1.1vw;
+  }
+
+  .people-find {
+    font-size: 2.6vw;
+  }
+
+  .search-find {
+    font-size: 1.1vw;
+  }
+
+  .search-result {
+    gap: 1rem;
+  }
+
+  .people {
+    width: 23%;
+    gap: 0.8rem;
+  }
+
+  .name {
+    font-size: 1.5vw;
+  }
+
+  .contact i {
+    font-size: 1.5vw;
+  }
+
+  .people-profession {
+    font-size: 1.4vw;
+  }
+
+  .people-experites {
+    font-size: 1.3vw;
+  }
+
+  .people-profile {
+    padding: 0 2vw;
+    padding-top: 15vh;
+  }
+
+  .help {
+    font-size: 1.4vw;
+  }
+
+  .meeting-bottom {
+    width: 50%;
+    font-size: 1.5vw;
+  }
+
+  .person-img {
+    width: 60%;
+  }
+
+  /* Licencing Page */
+
+  .h5-heading {
+    font-size: 1.5vw;
+  }
+
+  .company-name {
+    font-size: 1.7vw;
+  }
+
+  .address .location-text,
+  .company-link .location-text {
+    font-size: 1.4vw;
+  }
+
+  .country-name {
+    font-size: 1.8vw;
+  }
+
+  .contry-active {
+    font-size: 1.1vw;
+  }
+
+  /* Blog Single Page */
+  .blog-post {
+    height: fit-content;
+    padding: 4em 2em;
+    width: 70%;
+    padding-top: 20vh;
+  }
+
+  .blog-post-title {
+    text-align: center;
+  }
+
+  .blog-post .paragraph {
+    width: 100%;
+  }
+
+  .author {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .author-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .author-name {
+    font-size: 1.4vw;
+  }
+
+  .blog-main-tittle {
+    font-size: 2vw;
+  }
+
+  .blog-mini-tittle {
+    font-size: 1.6vw;
+  }
+
+  .more-blog .h4-text {
+    font-size: 1.7vw;
+    text-align: center;
+  }
+
+  .blog-img {
+    width: 100%;
+    height: 60%;
+  }
+  /* Blog Section */
+
+  .content-center .mortgage-expert {
+    font-size: 5.7vw;
+  }
+
+  .search-article {
+    font-size: 1.5vw;
+  }
+
+  .search-article::placeholder {
+    font-size: 1.5vw;
+  }
+
+  .filter .h5-heading {
+    font-size: 1.7vw;
+  }
+
+  .filter-button {
+    font-size: 1.4vw;
+  }
+
+  .h6-heading {
+    font-size: 1.4vw;
+  }
+
+  .blog-desc .paragraph {
+    font-size: 1vw;
+  }
+
+  .read-more .paragraph {
+    font-size: 1vw;
+  }
+}

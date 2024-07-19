@@ -1,0 +1,90 @@
+.walk-bg img{
+    width: 100vw;
+}
+
+.walk-bg{
+    transform: translateY(50vh);
+    z-index: 10;
+}
+
+.walk{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 20;
+}
+
+.walk-lower{
+    font-size: 60px;
+    overflow: hidden;
+}
+.walk-upper{
+    font-size: 16px;
+    overflow: hidden;
+}
+.text-upper{
+    transform: translateY(30px);
+}
+.text-lower{
+    transform: translateY(150px);
+}
+
+.walk-video{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+}
+
+.walk-bg-2{
+    width: 100vw;
+    /* height: 100vh; */
+}
+
+.walk-bg-2 img{
+    transform-origin: top center;
+    scale: 2;
+    width: 100vw;
+}
+
+.leaders-picture{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.pic{
+    width: 0px;
+    height: 220px;
+    overflow: hidden;
+    transform-origin: center center;
+    z-index: 20;
+}
+
+.pic img{
+    height: 220px;
+    width: 220px;
+}
+
+.blue{
+    width: 1px;
+    height: 220px;
+    background-color: blue;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    z-index: 10;
+}
+
+.feedback-right{
+    transform: rotate(-2.763deg) ;
+    margin-bottom: 50px;
+}
+.feedback-left{
+    transform: rotate(-2.763deg) translateY(200px) ;
+}
