@@ -156,8 +156,14 @@
 .footer-logo-mobile{
     display: none;
 }
+.footer-details-mobile{
+    display: none;
+}
 .footer-logo{
     display: block;
+}
+.socail-media{
+    display: flex;
 }
 
 /* Responsive Styles */
