@@ -1,3 +1,44 @@
+/MOBILE SECTION/
+.mobile-left-side {
+  padding: 0;
+  margin-left: 0px;
+  margin-right: 3rem;
+}
+
+.mobile-left-side-1{
+  height: 150px;
+  width: 320px;
+}
+
+.mobile-left-side-2{
+  height: 150px;
+  width: 320px;
+}
+
+.mobile-right-side {
+  padding: 0;
+  margin-right: 0px;
+  margin-left: 3rem;
+}
+
+.mobile-right-side-1{
+  height: 150px;
+  width: 320px;
+}
+
+.mobile-right-side-2{
+  height: 170px;
+  width: 340px;
+}
+
+.movile-display{
+  background-image:url("./mobile-original.png");
+  background-size: cover;
+  z-index: 200;
+  object-fit: cover;
+}
+
+
 .walk-bg img{
     width: 100vw;
 }
@@ -119,8 +160,131 @@
     display: block;
 }
 
+/* Responsive Styles */
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:768px) {
+    .menu-bar-link {
+        display: none; 
+    }
+  
+    nav .nav-link {
+        display: none;
+    }
+   
+    .nav-icon {
+        display: none;
+    }
+    
+    .small-icons{
+      display: flex !important;
+    }
+  
+    .house-page{
+      display: flex;
+      flex-direction: column;
+      margin: 1.25rem 0rem 1.25rem 0rem;
+      justify-content: center;
+      align-items: center;
+    } 
+   
+     .content .moto{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 0rem;
+      padding-top: 0rem;
+     }
+    .content .moto span{
+      font-size: 0.75rem;
+      display: flex;
+      flex-direction: column !important;
+      justify-content: space-between;
+      align-items: center;
+      color: #727272;
+      font-weight: 700;
+    }
+  
+  
+    .content .moto span p{
+       color: #A9A9A9;
+       font-weight: 200;
+    }
+  
+    .content img{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       margin-top: 3rem; 
+    }
+  
+   
+   .mortgage-big{
+    display: none;
+   } 
+  
+   .mortgage-small{
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75rem;
+   }
+  
+   .mortgage-small h1{
+    color: #000 !important;
+    line-height: 3.75rem !important;
+   }
+  
+   .content .moto .home-page-button {
+               
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0px;
+            text-align: center;
+            align-content: center;
+            width: 50%;
+            height: 50%;
+   }
+   .content >.moto >.home-page-button >button{
+          height: 0.75rem !important;
+          width: 70vw !important;
+          border-radius: 0px;
+          text-align: center;
+          align-content: center;
+   }
+   
+   .upper-slider {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 100vw;
+    height:100vh ;
+   }
+  
+   .upper-slider .slider{
+    width: 100%;
+   }
+  
+   .mobile-feautre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+  
+   .mobile-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+
+    /** review  */
     .para-text{
         font-size: 12px;
     }
