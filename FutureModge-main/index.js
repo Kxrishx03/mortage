@@ -112,6 +112,18 @@ document.addEventListener('DOMContentLoaded', function() {
             scrub : 1
         }
     })
+    gsap.to('.feedback-right', {
+        y:0,
+        scrollTrigger:{
+            trigger:'.review-tittle',
+            start : 'top 60%',
+            end : 'top 59%',
+            scrub : 1,
+            // markers : true
+        }
+    })
+
+
     gsap.to('.feedback-left', {
         x:-400,
         scrollTrigger:{
@@ -124,13 +136,26 @@ document.addEventListener('DOMContentLoaded', function() {
     gsap.to('.feedback-left', {
         y : 0,
         scrollTrigger:{
-            trigger:'.feedback-right',
-            start : 'top 40%',
-            end : 'top 39%',
+            trigger:'.review-tittle',
+            start : 'top 20%',
+            end : 'top 19%',
             scrub : 1
         }
     })
 });
+
+// review 
+document.addEventListener('DOMContentLoaded', function() {
+    gsap.to('.para-text',{
+        y : 0,
+        scrollTrigger:{
+            trigger:'.feedback-para',
+            start : 'top center',
+            end : 'top 49%',
+            scrub : 1
+        }
+    })
+})
 
 
 document.addEventListener('DOMContentLoaded', function() {
