@@ -1,4 +1,4 @@
-/MOBILE SECTION/
+/*MOBILE SECTION*/
 .mobile-left-side {
   padding: 0;
   margin-left: 0px;
@@ -224,8 +224,48 @@
        align-items: center;
        margin-top: 3rem; 
     }
+
+    .mobile-feautre{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .mobile-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .mobile-left-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    .movile-display{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+    }
+
+   .left-13{
+       display: none !important;
+    }
   
-   
+    .content .img-home-big{
+        display: none;
+    }
    .mortgage-big{
     display: none;
    } 
@@ -262,7 +302,7 @@
           text-align: center;
           align-content: center;
    }
-   
+ 
    .upper-slider {
     display: flex;
     flex-direction: column;
