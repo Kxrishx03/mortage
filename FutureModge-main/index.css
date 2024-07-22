@@ -405,10 +405,29 @@
     flex-direction: column;
     font-size: 0.5rem !important;
    }
+    
+   /*Phone screen*/
 
+   .movile-display .custom-background{
+      width: 80% !important;
+      height: 60vh !important;
+     position: absolute !important;
+     left: 1.4rem !important;
+   }
    .movile-display{
     display: flex !important;
-    height: 30% !important;
+    height: 70vh !important;
+    width: 60% !important;
+    justify-content: center;
+    align-items: center;
+   }
+   .logo-future{
+     margin: 0 !important;
+     position: none !important;
+   }
+   .logo-details-mobile{
+    display: flex !important;
+    width: 100% !important;
    }
     .paragraph{
         font-size: 0.75rem;
