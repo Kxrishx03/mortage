@@ -315,21 +315,112 @@
    .upper-slider .slider{
     width: 100%;
    }
-  
+   
    .mobile-feautre{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100% !important;
    }
-  
    .mobile-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 90% !important;
+    width: 100% !important;
+    margin-top: 0 !important;
+   }
+   
+   .paragraph{
+     font-size: 0.75rem !important;
+     width: 100% !important;
+   }
+   /*Left side*/
+   .mobile-left-side{
+    margin-top: 3rem !important;
+    width: 100% !important;
+    height: 30% !important;
+    font-size: 0.75rem !important;
+   }
+   .mobile-left-side-1{
+    margin-top: 2rem !important;
+    margin-bottom: 1rem !important;
+    height: 50% !important;
+    width: 100% !important;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 0.5rem !important;
+   }
+   .mobile-left-side-2{
+    margin-top: 0rem;
+    height: 50% !important;
+    width: 100% !important;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 0.5rem !important;
    }
 
+   .mls-1{
+    display: flex !important;
+    justify-content:center;
+    align-items:center ;
+   }
+   
+   /*Right side*/
+   .mobile-right-side{
+    margin-top: 3rem !important;
+    margin: 0 !important;
+    width: 100% !important;
+    height: 30% !important;
+   }
+   .mobile-right-side-1{
+    margin-top: 2rem !important;
+    margin-bottom: 1rem !important;
+    height: 50% !important;
+    width: 100% !important;
+    text-align: center;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 0.5rem !important;
+   }
+   .mobile-right-side-2{
+    margin: 0 !important;
+    margin-top: 0rem;
+    height: 50% !important;
+    width: 100% !important;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 0.5rem !important;
+   }
+
+   .movile-display{
+    display: flex !important;
+    height: 30% !important;
+   }
+    .paragraph{
+        font-size: 0.75rem;
+    }
+   .h1-heading{
+    margin-top: 0rem !important;
+    height: 2vh;
+    margin-bottom: 0rem !important;
+    font-size: 1.75rem !important;
+    width: 100% !important;
+    font-weight: 500;
+   }
     /** review  */
     .para-text{
         font-size: 12px;
