@@ -410,9 +410,10 @@
 
    .movile-display .custom-background{
       width: 80% !important;
-      height: 60vh !important;
+      height: 63vh !important;
      position: absolute !important;
-     left: 1.4rem !important;
+     left: 1.45rem !important;
+     top: 1.2rem !important;
    }
    .movile-display{
     display: flex !important;
@@ -428,6 +429,7 @@
    .logo-details-mobile{
     display: flex !important;
     width: 100% !important;
+    font-size: 0.75rem !important;
    }
     .paragraph{
         font-size: 0.75rem;
