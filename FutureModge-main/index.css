@@ -373,7 +373,7 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 100vh;
+    height: 100% !important;
   }
 
   .upper-slider .slider {
@@ -454,6 +454,20 @@
     flex-direction: column;
   }
 
+  .blue-left-div{
+      display: none;
+    }
+   .blue-left-div-sm{
+       display: flex !important;
+   } 
+
+   .blue-right-div{
+    display: none;
+   }
+
+   .blue-right-div-sm{
+    display: flex !important;
+   }
   /*Right side*/
   .mobile-right-side {
     margin-top: 3rem !important;
