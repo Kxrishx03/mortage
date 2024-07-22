@@ -28,7 +28,37 @@
         height: 100vh !important;
       }
 
-      .mortgage-expert  span{
+      .expert-span {
+        padding: 1.4rem;
         font-size: 3rem !important;
       }
+      .mortgage-expert p {
+        font-size: 2.75rem;
+        letter-spacing: normal;
+      }
+      .menfesto-rect p{
+        font-size: 1.75rem;
+        width: 100% !important;
+        text-align: center;
+      }
+      .menfesto-circle {
+        height: 80% !important;
+        width: 100% !important;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row !important;
+      }
+      /* .circle-rect{
+        display: none !important;
+      }
+      .circle-rect-1{
+        display: flex !important;
+        height: 80% !important;
+      }
+      .circle-rect-m{
+        display: flex !important;
+        height: 100% !important;
+      } */
+     
 }
