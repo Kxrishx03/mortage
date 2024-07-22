@@ -158,20 +158,22 @@ document.addEventListener('DOMContentLoaded', function() {
 })
 
 
+// *-----------------------leader hover animation 
 document.addEventListener('DOMContentLoaded', function() {
     const leaderNames = document.querySelectorAll('.leader-name');
     const names = document.querySelectorAll('.pic');
 
     leaderNames.forEach((name, i) => {
+        //* hover 
         name.addEventListener('mouseenter', () => {
             gsap.to(names[i], {
-                width: 220,
+                width: 280,
                 ease: 'power1.inOut'
             });
         });
         name.addEventListener('mouseenter', () => {
             gsap.to(`.leaders-picture`, {
-                width: 220,
+                width: 280,
                 ease: 'power1.inOut'
             });
         });
@@ -182,6 +184,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
 
+        // *hover leave 
         name.addEventListener('mouseleave', () => {
             gsap.to(names[i], {
                 width : 0,
