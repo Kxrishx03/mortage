@@ -565,11 +565,12 @@ nav .nav-icon a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   gap: 2rem;
   position: relative;
   z-index: 1;
   margin-top: 10vh;
+  font-family: Urbanist;
 }
 
 .leaders .custom-background-white{
@@ -577,18 +578,9 @@ nav .nav-icon a {
 }
 
 
-.leaders .h5-heading{
+.leaders{
   text-align: center;
   font-size: 1.2vw;
-  z-index: 99;
-}
-
-.h1-heading{
-  color: #000;
-  text-align: center;
-  font-family: Urbanist;
-  font-size: 2.3vw;
-  font-weight: 400;
   z-index: 99;
 }
 
@@ -598,7 +590,6 @@ nav .nav-icon a {
   flex-direction: column;
   gap: 3rem;
   z-index: 999;
-  width: 235px;
 }
 
 
@@ -620,13 +611,14 @@ nav .nav-icon a {
 .ln-r{
   text-align: left;
 }
+
 .leader-name{
   color: #000;
   text-align: right;
   leading-trim: both;
   text-edge: cap;
   font-family: Urbanist;
-  font-size: 30px;
+  font-size: 42px;
   font-weight: 400;
   cursor: pointer;
 }

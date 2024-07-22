@@ -1,109 +1,109 @@
-@media screen and (max-width: 768px){
-    #menu-bar{
-        display: none !important;
-    }
-    .main .menu-bar {
-        display: none !important;
-    }
-    .menu-bar-link {
-        display: none;
-      }
-    
-      nav .nav-link {
-        display: none;
-      }
-    
-      .nav-icon {
-        display: none;
-      }
-    
-      .small-icons {
-        display: flex !important;
-      }
+@media screen and (max-width: 768px) {
+  #menu-bar {
+    display: none !important;
+  }
+  .main .menu-bar {
+    display: none !important;
+  }
+  .menu-bar-link {
+    display: none;
+  }
 
-      .earth-rotation{
-        margin-top: 5rem;
-        width: 100% !important;
-        height: 80vh !important;
-      }
+  nav .nav-link {
+    display: none;
+  }
 
-      .expert-span{
-        font-size: 4.3rem !important;
-      }
-      .mortgage-expert{
-        font-size: 4rem;
-      }
+  .nav-icon {
+    display: none;
+  }
 
-      .licence-text{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-      }
+  .small-icons {
+    display: flex !important;
+  }
 
-      .h5-heading{
-        margin-top: 0 !important;
-        font-size: 1.2rem  !important;
-        width: 100% !important;
-      }
+  .earth-rotation {
+    margin-top: 5rem;
+    width: 100% !important;
+    height: 80vh !important;
+  }
 
-      .company-licence{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 100%!important;
-        margin-top: 3rem !important;
-      }
+  .expert-span {
+    font-size: 4.3rem !important;
+  }
+  .mortgage-expert {
+    font-size: 4rem;
+  }
 
-      .company-name {
-        font-size: 1.75rem !important;
-        width: 100%!important;
-      }
-      .address {
-        width: 100% !important;
-      }
-      .address p {
-        display: flex !important;
-        text-align: justify !important;
-        font-size: 0.9rem !important;
-        padding: 0.5rem;
-      }
+  .licence-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
-      .company-link {
-        width: 100% !important;
-      }
+  .h5-heading {
+    margin-top: 0 !important;
+    font-size: 1.2rem !important;
+    width: 100% !important;
+  }
 
-      .company-link p{
-        display: flex !important;
-        align-items: center !important;
-        text-align: justify !important;
-        font-size: 0.9rem !important;
-      }
-      .country-list{
-        width: 100vh !important;
-        padding: 2rem !important;
-        display: flex !important;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-      }
+  .company-licence {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100% !important;
+    margin-top: 3rem !important;
+  }
 
-      .country {
-        width: 100% !important;
-       font-size: 1.75rem !important;
-      }
+  .company-name {
+    font-size: 1.75rem !important;
+    width: 100% !important;
+  }
+  .address {
+    width: 100% !important;
+  }
+  .address p {
+    display: flex !important;
+    text-align: justify !important;
+    font-size: 0.9rem !important;
+    padding: 0.5rem;
+  }
 
-      .country .contry-details h2{
-        width: 100% !important;
-        font-size: 1.75rem !important;
-      }
+  .company-link {
+    width: 100% !important;
+  }
 
-      .country .contry-details p{
-        font-size: 0.75rem;
-      }
+  .company-link p {
+    display: flex !important;
+    align-items: center !important;
+    text-align: justify !important;
+    font-size: 0.9rem !important;
+  }
+  .country-list {
+    width: 100vh !important;
+    padding: 2rem !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
-       /* footer */
+  .country {
+    width: 100% !important;
+    font-size: 1.75rem !important;
+  }
+
+  .country .contry-details h2 {
+    width: 100% !important;
+    font-size: 1.75rem !important;
+  }
+
+  .country .contry-details p {
+    font-size: 0.75rem;
+  }
+
+  /* footer */
 
   footer {
     padding: 30px;
