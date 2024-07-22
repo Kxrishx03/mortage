@@ -1,4 +1,4 @@
-/MOBILE SECTION/
+/* /MOBILE SECTION/ */
 .mobile-left-side {
   padding: 0;
   margin-left: 0px;
@@ -101,15 +101,20 @@
 
 .pic{
     width: 0px;
-    height: 220px;
+    height: 250px;
     overflow: hidden;
     transform-origin: center center;
     z-index: 20;
+    text-align: center;
 }
 
 .pic img{
     height: 220px;
     width: 220px;
+}
+.pic-pos{
+    font-size: 20px;
+    color: A6A6A6;
 }
 
 .blue{
@@ -131,7 +136,7 @@
     transform: rotate(-2.763deg) translateY(200px) ;
 }
 
-/* review  */
+/**---------------------------------- review  */
 
 .paragraph{
     /* background-color: aqua; */
@@ -147,7 +152,7 @@
     display: none;
 }
 
-/* leaders  */
+/**------------------------------------------ footer  */
 
 .leaders-mobile{
     display: none;
@@ -166,7 +171,7 @@
     display: flex;
 }
 
-/* Responsive Styles */
+/**-------------------------------------- Responsive Styles */
 
 @media screen and (max-width:768px) {
     .menu-bar-link {
@@ -322,6 +327,9 @@
         font-size: 14px;
         padding: 10px;
     }
+
+    /**--------------- leaders  */
+
     .leaders{
         display:none;
     }
