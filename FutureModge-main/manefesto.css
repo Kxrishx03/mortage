@@ -1,0 +1,49 @@
+@media screen and (max-width: 768px){
+    #menu-bar{
+        display: none !important;
+    }
+    .main .menu-bar {
+        display: none !important;
+    }
+    .menu-bar-link {
+        display: none;
+      }
+    
+      nav .nav-link {
+        display: none;
+      }
+    
+      .nav-icon {
+        display: none;
+      }
+    
+      .small-icons {
+        display: flex !important;
+        margin: 0.5rem;
+      }
+
+      .manfesto{
+        margin-top: 5rem;
+        width: 100% !important;
+        height: 100vh !important;
+      }
+
+      .expert-span {
+        padding: 1.4rem;
+        font-size: 2.5rem !important;
+      }
+      .mortgage-expert p {
+        font-size: 2.75rem;
+        letter-spacing: normal;
+      }
+      .menfesto-rect p{
+        font-size: 1.75rem;
+        width: 100% !important;
+        text-align: center;
+      }
+     
+      .menfesto-circle{
+        width: 100vw !important;
+      }
+     
+}
