@@ -362,22 +362,13 @@
 }
 
 @media screen and (max-width: 768px) {
-  .menu-bar-link {
+  /* *------------------------------navbar  */
+  .user-icon{
+    display: block !important;
+  }
+  .nav-links, .nav-icon{
     display: none;
-  }
-
-  nav .nav-link {
-    display: none;
-  }
-
-  .nav-icon {
-    display: none;
-  }
-
-  .small-icons {
-    display: flex !important;
-    margin: 0.5rem;
-  }
+}
 
   /* *----------------------house page  */
 
