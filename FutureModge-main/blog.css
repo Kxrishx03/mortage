@@ -38,7 +38,8 @@
     }
     .search-article{
         width: 90% !important;
-        height: 24px;
+    }
+    .search-article::placeholder{
         font-size: 16px !important;
         padding: 8px !important;
     }
@@ -65,12 +66,11 @@
     }
     .blog{
         flex-direction: row !important;
+        align-items: flex-start !important;
     }
-    /* .blog-img{
-        width: 118px !important;
-        height: 109px !important;
-        overflow: hidden;
-    } */
+    .blog-img{
+        width: fit-content !important;
+    }
     .blog-img img{
         height: 109px !important;
         width: 118px !important;
