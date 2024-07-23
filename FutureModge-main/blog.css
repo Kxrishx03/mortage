@@ -1,9 +1,54 @@
+/* *-----------------------------------------footer  */
+.footer-logo-mobile {
+    display: none;
+  }
+  .footer-details-mobile {
+    display: none;
+  }
+  .footer-logo {
+    display: block;
+  }
+  .socail-media {
+    display: flex;
+  }
+  
+
 @media screen and (max-width:768px) {
     .custom-background{
         display: none !important;
     }
+    .learning-center{
+        height: 50vh;
+        min-height: 400px !important;
+        margin-top: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 32px !important;
+    }
+    .learning-img{
+        position: absolute;
+        left: 0%;
+        top: 0px;
+        width: 100%;
+        z-index: 99;
+    }
+    .mortgage-expert{
+        font-size: 52px !important;
+    }
+    .search-article{
+        width: 90% !important;
+        height: 24px;
+        font-size: 16px !important;
+        padding: 8px !important;
+    }
+    .content-center{
+        z-index: 90;
+    }
     .filter{
         width: 100vw;
+        padding: 20px !important;
+        padding-bottom: 0% !important;
     }
     .filter h5{
         font-size: 20px !important;
@@ -16,6 +61,7 @@
     }
     .blog-catergory{
         flex-direction: column ;
+        padding: 20px !important;
     }
     .blog{
         flex-direction: row !important;
@@ -57,4 +103,67 @@
     .blog-desc, .blog-title, .read-more{
         padding-left: 0% !important;
     }
+
+    /**----------------------------------------------------- footer  */
+
+    
+  footer {
+    padding: 30px;
+  }
+  .footer-logo-mobile {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .footer-logo,
+  .footer-details {
+    display: none;
+  }
+  .footer-quote {
+    justify-content: center;
+    padding: 30px 0px;
+  }
+  .footer-quote svg {
+    display: none;
+  }
+  .rights {
+    font-size: 8px;
+  }
+  .quote img {
+    width: 30px;
+    height: 30px;
+  }
+  .footer-details-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-links {
+    gap: 0px;
+    justify-content: space-between;
+  }
+  .link-tag {
+    font-size: 13px;
+  }
+  .d-btn {
+    width: 100px;
+  }
+  .footer-btn {
+    padding: 40px 0px;
+  }
+  .footer-socials {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+  }
+  .location-img {
+    width: 50px;
+  }
+  .location-text {
+    font-size: 11px;
+  }
+  .socail-media svg {
+    height: 20px !important;
+    width: 20px !important;
+  }
 }

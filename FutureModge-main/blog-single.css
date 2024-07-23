@@ -1,0 +1,38 @@
+@media screen and (max-width:768px) {
+    .single-blog-post{
+        width: 100vw !important;
+    }
+    .blog-post{
+        width: 100%;
+        padding: 24px !important;
+        padding-top: 128px !important;
+    }
+    .people-find{
+        font-size: 28px;
+    }
+    #para{
+        font-size: 16px;
+    }
+    .paragraph{
+        font-size: 16px;
+    }
+    .author-img{
+        width: 37px;
+        height: 37px;
+    }
+    .author-name{
+        font-size: 15px;
+    }
+    .blog-main-tittle{
+        font-size: 30px ;
+    }
+    .blog-mini-tittle{
+        font-size: 22px ;
+    }
+    .blog-post-content p{
+        font-size: 17px;
+    }
+    .more-blog{
+        display: none;
+    }
+}
