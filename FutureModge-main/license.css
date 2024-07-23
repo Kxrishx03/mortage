@@ -1,25 +1,4 @@
 @media screen and (max-width: 768px) {
-  #menu-bar {
-    display: none !important;
-  }
-  .main .menu-bar {
-    display: none !important;
-  }
-  .menu-bar-link {
-    display: none;
-  }
-
-  nav .nav-link {
-    display: none;
-  }
-
-  .nav-icon {
-    display: none;
-  }
-
-  .small-icons {
-    display: flex !important;
-  }
 
   .earth-rotation {
     margin-top: 5rem;
@@ -103,65 +82,5 @@
     font-size: 0.75rem;
   }
 
-  /* footer */
-
-  footer {
-    padding: 30px;
-  }
-  .footer-logo-mobile {
-    display: block;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
-  .footer-logo,
-  .footer-details {
-    display: none;
-  }
-  .footer-quote {
-    justify-content: center;
-    padding: 30px 0px;
-  }
-  .footer-quote svg {
-    display: none;
-  }
-  .rights {
-    font-size: 8px;
-  }
-  .quote img {
-    width: 30px;
-    height: 30px;
-  }
-  .footer-details-mobile {
-    display: flex;
-    flex-direction: column;
-  }
-  .footer-links {
-    gap: 0px;
-    justify-content: space-between;
-  }
-  .link-tag {
-    font-size: 13px;
-  }
-  .d-btn {
-    width: 100px;
-  }
-  .footer-btn {
-    padding: 40px 0px;
-  }
-  .footer-socials {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 40px;
-  }
-  .location-img {
-    width: 50px;
-  }
-  .location-text {
-    font-size: 11px;
-  }
-  .socail-media svg {
-    height: 20px !important;
-    width: 20px !important;
-  }
+ 
 }

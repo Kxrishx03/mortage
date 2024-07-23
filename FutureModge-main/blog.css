@@ -14,13 +14,7 @@
   
 
 @media screen and (max-width:768px) {
-    /* *----------------------------------------navbar  */
-    .user-icon{
-        display: block !important;
-      }
-    .nav-links, .nav-icon{
-        display: none;
-    }
+
     .custom-background{
         display: none !important;
     }

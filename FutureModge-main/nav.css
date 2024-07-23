@@ -1,0 +1,25 @@
+@media screen and (max-width: 768px) {
+    /* *------------------------------navbar  */
+    .user-icon{
+      display: block !important;
+    }
+    .nav-links, .nav-icon{
+      display: none;
+  }
+  .menu-bar-link{
+    padding: 0px 20px !important;
+  }
+  .email{
+    display: none;
+  }
+  .linkdin{
+    font-size: 12px !important;
+  }
+  .menu-social-media, .social-media-link{
+    width: 100% !important;
+  }
+  .social-media-link{
+    justify-content: space-between !important;
+    padding: 16px 0px  ;
+  }
+}

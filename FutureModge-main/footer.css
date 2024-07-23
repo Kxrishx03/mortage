@@ -1,4 +1,7 @@
 /* *-----------------------------------------footer  */
+footer{
+    padding-bottom: 50px !important;
+}
 .footer-logo-mobile {
     display: none;
   }
@@ -15,7 +18,7 @@
 
 @media screen and (max-width:768px) {
   footer {
-    padding: 30px;
+    padding: 30px !important;
   }
   .footer-logo-mobile {
     display: block;
