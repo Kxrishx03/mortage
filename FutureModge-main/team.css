@@ -5,16 +5,21 @@
     padding-left: 0.3rem;
     height: 19vh !important;
   }
-
+  .people-profile{
+    display: none;
+  }
   .people-catergory {
     width: 100vw !important;
-    gap: 0.9rem !important;
+    gap: 1rem !important;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding: 32px !important;
+    overflow-x: scroll;
   }
   .people-catergory button {
     width: 100vw !important;
-    font-size: 0.7rem !important;
+    font-size: 18px !important;
+    white-space: nowrap;
   }
 
   .big {
@@ -40,7 +45,7 @@
   .filter-loc-up {
     display: flex !important;
     justify-content: flex-end !important;
-    font-size: 0.7rem !important;
+    font-size: 1rem !important;
     height: 10% !important;
     width: 100% !important;
     margin: 0 !important;
@@ -53,11 +58,12 @@
     gap: 0 !important;
   }
   .selection-text {
-    font-size: 1.5rem;
+    font-size: 20px;
     margin-bottom: 1rem !important;
   }
-  .input-text {
-    font-size: 0.75rem;
+  .input-text::placeholder {
+    font-size: 0.8rem;
+    padding-left: 12px;
   }
   .people-search {
     width: 100 !important;
