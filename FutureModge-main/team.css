@@ -82,8 +82,10 @@
   .people {
     width: 100% !important;
     display: flex;
-    justify-content: space-between !important;
+    justify-content: flex-start !important;
     flex-direction: row !important;
+    padding: 8px;
+    border-radius: 8px;
   }
   .people-1 {
     width: 60% !important;
@@ -94,12 +96,21 @@
     justify-content: center;
   }
   .people-img {
-    width: 40% !important;
+    /* width: 40%; */
+    width: 137px;
+
+  }
+  .star{
+    display: none !important;
+  }
+  .star-sm{
+    display: block !important;
   }
   .people-name {
     width: 100% !important;
     display: flex !important;
     justify-content: flex-start !important;
+    font-size: 20px;
   }
   .people-name .name {
     font-size: 1.5rem !important;
@@ -116,8 +127,8 @@
     width: 100% !important;
     display: flex !important;
     justify-content: flex-start !important;
-    font-size: 0.75rem !important;
-    padding: 0.4rem;
+    font-size: 0.875rem !important;
+    padding:0.4rem 0px;
   }
   .rating {
     width: 100% !important;
@@ -125,6 +136,7 @@
     justify-content: flex-start !important;
     padding: 0.4rem;
     font-size: 0.75rem !important;
+    align-items: center !important;
   }
   .rating h4 {
     font-size: 0.75rem !important;
@@ -137,11 +149,11 @@
     width: 100% !important;
     display: flex !important;
     justify-content: flex-start !important;
-    font-size: 0.75rem !important;
-    padding: 0.4rem;
+    padding: 0.2rem !important;
   }
 
   .experites button {
-    font-size: 0.75rem !important;
+    font-size: 0.625rem !important;
+    padding: 0.225rem !important;
   }
 }
