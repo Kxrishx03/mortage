@@ -376,6 +376,7 @@
 
   .small-icons {
     display: flex !important;
+    margin: 0.5rem;
   }
 
   /* *----------------------house page  */
