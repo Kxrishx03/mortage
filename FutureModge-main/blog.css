@@ -1,3 +1,20 @@
+.learning-img{
+    position: absolute;
+    left: 0%;
+    top: 0px;
+    width: 100%;
+    z-index: 99;
+}
+.content-center, .filter{
+    transform: translateY(500px);
+}
+.mortgage-expert, .search-article{
+    z-index: 200 !important;
+}
+.custom-background{
+    display: none;
+}
+
 /* *-----------------------------------------footer  */
 .footer-logo-mobile {
     display: none;
@@ -11,7 +28,7 @@
   .socail-media {
     display: flex;
   }
-  
+
 
 @media screen and (max-width:768px) {
 
@@ -26,13 +43,6 @@
         justify-content: center;
         align-items: center;
         padding: 32px !important;
-    }
-    .learning-img{
-        position: absolute;
-        left: 0%;
-        top: 0px;
-        width: 100%;
-        z-index: 99;
     }
     .mortgage-expert{
         font-size: 52px !important;

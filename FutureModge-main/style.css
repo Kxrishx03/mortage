@@ -437,7 +437,7 @@ nav .nav-icon a {
   padding: 2vh 2vw;
   width: fit-content;
   margin-top: 3vh;
-  border: 1px solid #fff;
+  border: 0px;
   background: transparent;
   color: #fff;
   font-family: Urbanist;
@@ -445,6 +445,8 @@ nav .nav-icon a {
   font-weight: 300;
   cursor: pointer;
   border-radius: 100px;
+  display: flex;
+  align-items: center;
 }
 
 .mobile-feautre {
@@ -1580,6 +1582,7 @@ nav .nav-icon a {
   color: #000;
   font-family: Urbanist;
   font-size: 2.2vw;
+  font-size: 62px;
   font-weight: 500;
   width: 40%;
   text-align: center;
@@ -1589,13 +1592,20 @@ nav .nav-icon a {
   width: 50%;
   text-align: center;
   font-size: 0.7vw;
+  font-size: 25px;
 }
 
-.option {
+.option{
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.opt {
+  width: 100vw;
   height: fit-content;
-  padding: 7em 4em;
-  background-color: #000;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1603,6 +1613,8 @@ nav .nav-icon a {
   gap: 5rem;
   position: relative;
   overflow: hidden;
+  background-color: #000;
+  padding: 7em 4em;
 }
 
 .option-text {
@@ -1650,7 +1662,7 @@ nav .nav-icon a {
 }
 
 .homeower {
-  width: 100%;
+  width: 100vw;
   height: fit-content;
   padding: 4em 2em;
   display: flex;
@@ -1664,13 +1676,10 @@ nav .nav-icon a {
   overflow: hidden;
   display: flex;
   justify-content: space-around;
-  padding: 0 10em;
 }
 .homeower-text {
   position: relative;
   z-index: 10;
-  width: 70%;
-  padding: 0 5em;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -1679,14 +1688,12 @@ nav .nav-icon a {
 .homeower-h4 {
   color: #fff;
   z-index: 10;
-  width: 50%;
   font-weight: 400;
   text-align: left;
 }
 
 .homeowner-img {
   position: relative;
-  width: 30%;
   height: 100%;
   z-index: 10;
 }
@@ -2247,7 +2254,7 @@ footer {
     font-size: 1vw;
   }
 
-  .option {
+  .opt {
     padding: 7em 2em;
   }
 
@@ -2496,7 +2503,7 @@ footer {
     font-size: 1.2vw;
   }
 
-  .option {
+  .opt {
     padding: 7em 2em;
     gap: 2rem;
   }
@@ -2802,7 +2809,7 @@ footer {
     font-size: 1.3vw;
   }
 
-  .option {
+  .opt {
     padding: 7em 2em;
     gap: 2rem;
   }
@@ -3182,7 +3189,7 @@ footer {
     font-size: 1.3vw;
   }
 
-  .option {
+  .opt {
     padding: 4em 1em;
     gap: 2rem;
   }

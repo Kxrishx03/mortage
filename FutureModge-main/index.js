@@ -5,6 +5,9 @@ let flag4 = window.innerWidth < 1920 ;
 
 window.addEventListener("resize", () => {
   flag = window.innerWidth < 768;
+  flag2 = window.innerWidth < 1201 && window.innerWidth > 768;
+  flag3 = window.innerWidth < 1921 && window.innerWidth > 1200;
+  flag4 = window.innerWidth < 1920 ;
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -109,6 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+  gsap.registerPlugin(ScrollTrigger);
   gsap.to(".feedback-right", {
     x: 400,
     scrollTrigger: {
@@ -151,6 +155,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // *------review  and mobile
 document.addEventListener("DOMContentLoaded", function () {
+  gsap.registerPlugin(ScrollTrigger);
   gsap.to(".para-text", {
     y: 0,
     scrollTrigger: {
@@ -311,3 +316,111 @@ document.addEventListener("DOMContentLoaded", function () {
   animations();
   window.addEventListener("resize", animations);
 });
+
+// *----------------------------learning center
+
+document.addEventListener("DOMContentLoaded", function () {
+  gsap.to('.content-center', {
+      y:0,
+      duration:.7
+  })
+  gsap.to('.filter', {
+      y:0,
+      duration: .7
+  })
+})
+
+//*------------------- manifesto 
+document.addEventListener("DOMContentLoaded", function () {
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.to(".con-right", {
+    right:'0%',
+    scrollTrigger:{
+      trigger : '.cosumers',
+      start : 'top bottom',
+      end : ' top 75%',
+      scrub : 1
+    }
+  })
+  gsap.to(".con-right", {
+    y:0,
+    scrollTrigger:{
+      trigger : '.cosumers',
+      start : 'top 75%',
+      end : ' top 50%',
+      scrub : 1,
+    }
+  })
+
+  gsap.to(".con-left", {
+    y: 0,
+    left : '0%',
+    scrollTrigger:{
+      trigger : '.cosumers',
+      start : 'top center',
+      end : ' top top',
+      scrub : 1
+    }
+  });
+
+
+  gsap.to(".opt-h4", {
+    y: 0,
+    scrollTrigger:{
+      trigger : '.option',
+      start : 'top 75%',
+      end : ' top 50%',
+      scrub : 1
+    }
+  });  gsap.to(".opt-1", {
+    y: 0,
+    scrollTrigger:{
+      trigger : '.option',
+      start : 'top 75%',
+      end : ' top center',
+      scrub : 1
+    }
+  });  gsap.to(".opt-2", {
+    y: 0,
+    left : '0%',
+    scrollTrigger:{
+      trigger : '.option',
+      start : 'top 70%',
+      end : ' top center',
+      scrub : 1
+    }
+  });  gsap.to(".opt-3", {
+    y: 0,
+    left : '0%',
+    scrollTrigger:{
+      trigger : '.option',
+      start : 'top 65%',
+      end : ' top center',
+      scrub : 1
+    }
+  });
+
+
+
+  gsap.to(".home-h4", {
+    y: 0,
+    scrollTrigger:{
+      trigger : '.homeower-h4',
+      start : 'top bottom',
+      end : ' top 50%',
+      scrub : 1
+    }
+  }); 
+  gsap.to(".homeowner-img", {
+    rotateX: 0,
+    scrollTrigger:{
+      trigger : '.hand-img',
+      start : 'bottom bottom',
+      end : 'bottom 90%',
+      scrub : 1,
+      // markers :true
+    }
+  }); 
+  
+})

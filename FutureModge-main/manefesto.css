@@ -1,22 +1,178 @@
-@media screen and (max-width: 768px){
-    
+.menfesto-paragarph{
+  color: #CECECE;
+}
+.con-left img, .con-right img{
+   height: 400px;
+}
+.con-left, .con-right{
+  position: absolute;
+}
+.con-left{
+  left: -10vw;
+  transform: translateY(45vh);
+}
+.con-right{
+  transform: translateY(-25vh);
+  right: -10vw;
+}
+.span-80{
+  color: #0000FF;
+  font-weight: 700;
+}
+.span-con{
+  font-weight: 700;
+}
+.cosumers-paragraph{
+  color: #545353;
+}
+.cosumers{
+  position: relative;
+}
+.options-box{
+  justify-content: center;
+  align-items: center;
+}
+.custom-background-2{
+  width: 100%;
+  position: absolute;
+}
+.homeower-text{
+  padding-left: 5em;
+}
+.option{
+  border-radius: 30px;
+}
+.option-text{
+  margin-bottom: 40px;
+  width: 90%;
+  overflow: hidden;
+}
+.homeower-h4{
+  overflow: hidden;
+}
+.opt-h4, .home-h4{
+  transform: translateY(100%);
+}
+.options-box{
+  transform: translateY(30vh);
+}
+.homeowner-img{
+  transform: rotateX(50deg);
+}
 
-      .expert-span {
-        padding: 1.4rem;
-        font-size: 2.5rem !important;
-      }
-      .mortgage-expert p {
-        font-size: 2.75rem;
-        letter-spacing: normal;
-      }
-      .menfesto-rect p{
-        font-size: 1.75rem;
-        width: 100% !important;
-        text-align: center;
-      }
-     
-      .menfesto-circle{
-        width: 100vw !important;
-      }
-     
+@media screen and (min-width: 1201px) and (max-width: 1920px) {
+  .con-right img, .con-left img{
+    height: 300px;
+  }
+  .h4-text {
+    font-size: 50px;
+  }
+  
+  .cosumers-paragraph {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .manfesto{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .menfesto-paragarph{
+    font-size: 18px;
+    width: 90%;
+  }
+  .manfesto-text p{
+    font-size: 42px !important;
+  }
+  .manfesto-circle{
+    justify-content: center;
+    align-items: center;
+  }
+  .circle-rect{
+    width: 50vw;
+    height: 50vw;
+  }
+  .circle-left2, .circle-right2{
+    display: none;
+  }
+  .cosumers-paragraph{
+      width: 70%;
+      font-size: 16px;
+  }
+  .con-left, .con-right{
+    position: relative;
+    width: 100%;
+  }
+  .con-right{
+    text-align: end;
+  }
+  .h4-text{
+    font-size: 24px;
+    width: 90%;
+  }
+  .con-left img{
+    width: 169px !important;
+    height: 127px !important;
+  }
+  .con-right img{
+    width: 134px !important;
+    height: 141px !important;
+  }
+  .expert-span {
+    padding: 1.4rem;
+    font-size: 2.5rem !important;
+  }
+  .mortgage-expert p {
+    font-size: 2.75rem;
+    letter-spacing: normal;
+  }
+
+  .menfesto-circle {
+    width: 100vw !important;
+  }
+
+  .opt{
+    /* height: 100vh; */
+    border-radius: 35px;
+    margin: 20px;
+    padding: 20px;
+    gap: 0px;
+  }
+  .options-section{
+    flex-direction: column !important;
+    gap: 20px;
+  }
+  .options-box{
+    width: 100%;
+    padding: 40px 20px ;
+    align-items: start;
+  }
+  .options-box p{
+    font-size: 13px !important;
+  }
+  .option-text{
+    padding: 42px 0px;
+    font-size: 28px;
+  }
+  .homeower{
+    padding: 62px 20px;
+  }
+  .video-section{
+    height: fit-content;
+    flex-direction: column;
+  }
+  .custom-background-2{
+    height: 100% !important;
+    width: max-content;
+  }
+  .homeower-text{
+    padding: 50px 20px;
+    position: relative;
+  }
+  .invisible-button{
+    position: absolute;
+    top: 100%;
+  }
+
 }
